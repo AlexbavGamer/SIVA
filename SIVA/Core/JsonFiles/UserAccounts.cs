@@ -6,6 +6,7 @@ using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Newtonsoft.Json;
+using Ultz.BeagleFramework.Common.Models;
 
 namespace SIVA.Core.JsonFiles
 {
@@ -30,7 +31,7 @@ namespace SIVA.Core.JsonFiles
         }
     }
 
-    public class UserAccount
+    public class UserAccount : DataModel
     {
         /*public UserAccount()
         {

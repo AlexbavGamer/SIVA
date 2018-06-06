@@ -74,6 +74,7 @@ namespace SIVA.Core.Bot
 
         private static string CreateConfigString(Guild config)
         {
+            // TODO: Please oh god please rewrite this
             var customCommands = "";
             var blacklistedWords = "";
             var selfRoles = "";

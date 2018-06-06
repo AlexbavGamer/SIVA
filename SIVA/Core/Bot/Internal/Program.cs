@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
@@ -11,8 +12,13 @@ namespace SIVA.Core.Bot.Internal
         public static DiscordSocketClient _client;
         public static EventHandler _handler;
 
-        private static void Main()
+        private static void Main(string[] args)
         {
+            if (args.FirstOrDefault()?.ToLower() == "--migrate")
+            {
+                DataMigrate.Program.MigratorMain(args);
+                return;
+            }
             Console.Title = "SIVA";
             Console.CursorVisible = false;
             Console.ForegroundColor = ConsoleColor.Green;

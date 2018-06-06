@@ -5,6 +5,7 @@ using System.Linq;
 using Discord;
 using Discord.Commands;
 using Newtonsoft.Json;
+using Ultz.BeagleFramework.Common.Models;
 
 namespace SIVA.Core.JsonFiles
 {

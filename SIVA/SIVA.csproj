@@ -27,6 +27,7 @@
     <PackageReference Include="Microsoft.NETCore.App" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="RestSharp" Version="106.2.2" />
+    <PackageReference Include="Ultz.BeagleFramework.SQLite" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System">
